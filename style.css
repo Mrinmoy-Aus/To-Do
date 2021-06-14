@@ -1,0 +1,157 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    margin:0px;
+    background-color: #ecf0f1;
+    font-family: 'Indie Flower', cursive;
+}
+
+.toolbar{
+    width:100vw;
+    height:7vh;
+    background-color: black;
+    display:flex;
+    align-items:center;
+    padding-left:5rem;
+}
+.filter:hover{
+    opacity:1;
+}
+.filter{
+    height:100%;
+    width:25%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    opacity: 0.65;
+}
+
+.filter-conainer{
+    height: 60%;
+    width:16rem;
+    background-color:#212427;
+    margin-right: 4rem;
+    display: flex;
+}
+
+.action-container{
+    height:2rem;
+    width:8rem;
+    background-color: #212427;
+    border-radius:0.2rem solid;
+    display:flex;
+    
+}
+
+.filter_color{
+    height:60%;
+    width:35%;
+    border-radius:0.1rem;
+}
+
+.pink{
+    background-color:#ffb1cc;
+}
+
+.green{
+    background-color: #00A36C;
+}
+.blue{
+    background-color:#4169E1;
+}
+
+.black{
+    background-color:rgba(97, 86, 86, 0.548);
+}
+
+.icon-container{
+    height:100%;
+    width:50%;
+    color:white;
+    padding:0.5rem;
+    padding-left:1.5rem;
+}
+.main-container{
+    height:93vh;
+    width:100vw;
+}
+
+.modal_container{
+    height:18rem;
+    width:36rem;
+    left: calc((100vw - 36rem)/2);
+    top:30vh;
+    position:absolute;
+    display: flex;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.698)
+}
+
+.input_container{
+    height:100%;
+    width:80%;
+}
+
+.active{
+    background-color: rgba(71, 69, 69, 0.473);
+}
+
+.modal_input{
+    height:100%;
+    width:100%;
+    outline:none;
+    padding:2rem 3rem;
+    font-family: 'Indie Flower', cursive;
+    font-size:1.5rem;
+    line-height:145%;
+    font-weight:400;
+}
+
+.modal_filter_container{
+    width:20%;
+    background-color: #444;
+    display: flex;
+    flex-direction: column; /*iska andar ka colours ka allignment column wise ha*/
+    justify-content: space-evenly;
+    align-items:center;
+    padding:0.5rem;
+}
+.modal_filter_container>.filter{
+    height:10%;
+    width:45%;
+}
+
+.border{
+    border:0.2rem solid black;
+}
+
+.main_container{
+    min-height:93vh;/* overflow:auto;*/
+    padding-top:2rem;
+    padding-left:3rem;
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+}
+
+.task_filter{
+    height:7%;
+}
+.task_container{
+    height:10rem;
+    width:16rem;
+    background-color: #fff;
+}
+
+.task_desc_container{
+    height:80%;
+    padding-left:0.5rem;
+}
+
+.task_desc{
+    height:70%;
+    overflow:auto; /*by defaulit overflow is visible overflow hidden it extracts the extra writtings overflow scroll given scroll when unecessary also overflow auto gives scroll when necessary*/
+    text-align:center;
+    word-break:break-all; /*when there is a very long word tnen it might overflow in the x direction so we need to break the word in the next line to prevent overflow it can be broken at any character*/
+    outline: none /*border vanishes*/
+}
